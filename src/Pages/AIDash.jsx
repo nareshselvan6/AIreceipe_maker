@@ -69,23 +69,12 @@ const AIDash = () => {
             { "mealType": mealType }
         ];
 
-        // const value = [
-        //     { 
-        //         "dietType": dietType, 
-        //         "cuisine": cuisine, 
-        //         "ingredients": ingredients, 
-        //         "allergies": allergies, 
-        //         "servings": servings, 
-        //         "cookingTime": cookingTime, 
-        //         "skillLevel": skillLevel, 
-        //         "mealType": mealType 
-        //     }
-        // ];
+ 
         
         console.log(input);
         
         try {
-            const senddata=await axios.post("url",input)
+            const senddata=await axios.post("https://aireceipe-backend.onrender.com/chat",input)
             .then(res=>setAidata(res.data))
             
         } catch (error) {
