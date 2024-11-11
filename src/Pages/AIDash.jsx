@@ -71,11 +71,9 @@ const AIDash = () => {
 
  
         
-        console.log(input);
-        
         try {
             const senddata=await axios.post("https://aireceipe-backend.onrender.com/chat",input)
-            .then(res=>setAidata(res.data))
+            .then(res=>setDatafound(res.data))
             
         } catch (error) {
             console.log(error);        
