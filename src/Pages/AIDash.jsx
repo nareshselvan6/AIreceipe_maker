@@ -88,7 +88,7 @@ const AIDash = () => {
         };
     
         try {
-            const response = await axios.post("http://localhost:8000/chat", prompt);
+            const response = await axios.post("https://aireceipe-maker-backend-gemini.onrender.com/chat", prompt);
             const responseData = response.data; 
     
             if (typeof responseData.response === 'string') {
@@ -108,7 +108,7 @@ const AIDash = () => {
     
         const prompt ={instructions: `please give me the receipe details depends on this catagory ${prereceipe} `}    
         try {
-            const response = await axios.post("http://localhost:8000/chat", prompt);
+            const response = await axios.post("https://aireceipe-maker-backend-gemini.onrender.com/chat", prompt);
             const responseData = response.data; 
     
             if (typeof responseData.response === 'string') {
@@ -203,7 +203,7 @@ const handleSelectForm = (formType) => {
 
                         </div>
                         <div className='customize_search d-flex justify-content-center flex-column align-items-center m-3 ' >
-                        <button className='optional_search btn btn-primary mb-5' onClick={() => handleSelectForm('customizeRecipe')}>Customize Receipe</button>
+                        <button className='optional_search btn btn-primary mb-5' onClick={() => handleSelectForm('customizeRecipe')}>Customized Receipe</button>
                         </div>
 
                         </div>
