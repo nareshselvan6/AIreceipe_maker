@@ -187,7 +187,7 @@ color: white;
   margin-top: 150px;
   border: 2px solid white;
   border-radius: 15px;
-  width: 750px;
+  width: 850px;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -366,7 +366,7 @@ width: 300px;
   }
 
   /* favourites */
-  .fav_city{
+  .fav_receipe{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,3 +474,20 @@ display: flex;
   height: 54px;
 }
 
+.favourite_btn{
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.datafound_display{
+  width: 500px;
+}
+
+
+/* modal */
+
+.modal-body{
+  overflow: scroll;
+    height: 415px;
+    overflow-x: hidden;
+}
