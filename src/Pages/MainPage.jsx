@@ -9,7 +9,7 @@ const MainPage = () => {
         <div>
             <div className='total'>
             <div className='mainpage'>
-            <h1 className='welcome-main'>Welcome to the AI Culinary Companion <i className="fa-solid fa-utensils"/></h1>
+            <h1 className='welcome-main'>Welcome To AI Culinary Companion <i className="fa-solid fa-utensils"/></h1>
             <button className='btn btn-primary click' onClick={()=>navigate("/dashboard")}>Click Here </button>
             </div>
             </div>
